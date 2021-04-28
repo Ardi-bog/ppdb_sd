@@ -1,0 +1,501 @@
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.main-content {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: calc(100% - 120px);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.wrapper {
+    padding: 0px 80px;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.main-content .left-content {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .right-content {
+    position: relative;
+}
+
+.main-content .right-content .main-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content .right-content .main-image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px) brightness(60%) contrast(1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .right-content .main-image-overlay .main-overlay-image {
+    width: 280px;
+    height: 280px;
+    object-fit: scale-down;
+}
+
+.main-content .left-content h1 {
+    color: #BE2623;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
+
+.main-content .left-content h2 {
+    color: #404651;
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
+
+.main-content .left-content p {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.main-content .left-content .btn-masuk {
+    display: block;
+    width: 60%;
+    padding: 8px 20px;
+    margin: 0;
+    color: #BE2623;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border: solid 1px #BE2623;
+    border-radius: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.main-content .left-content .btn-masuk:hover {
+    transform: scale(1.04);
+}
+
+.main-content .left-content .btn-daftar {
+    display: block;
+    width: 60%;
+    padding: 8px 20px;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background-image: linear-gradient(to right top, #5f1312, #be2623);
+    border-radius: 50px;
+    margin-top: 12px;
+    cursor: pointer;
+    box-shadow: 0px 4px 24px rgba(190, 38, 35, 0.16);
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.main-content .left-content .btn-daftar:hover {
+    box-shadow: 0px 4px 24px rgba(190, 38, 35, 0.4);
+    transform: scale(1.04);
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.title h1 {
+    color: #FFFFFF;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.title hr {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.tatacara-content {
+    background-image: linear-gradient(to right top, #5f1312, #be2623);
+    padding: 40px 0px;
+}
+
+.tatacara-content .tatacara-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+}
+
+.tatacara-content li {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.tatacara-content li a {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.tatacara-content li strong {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.footer {
+    background-color: #222222;
+    padding: 40px 0px;
+}
+
+.footer .title h1 {
+    color: #FFFFFF;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
+.footer .title hr {
+    width: 100px;
+    margin: 0;
+}
+
+.footer .footer-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer .footer-content-container .footer-content {
+
+}
+
+.footer .footer-content-container .footer-content .footer-content-title {
+    color: #FFFFFF;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
+
+.footer .footer-content-container .footer-content .footer-content-value {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.footer-split {
+    margin: 40px 0px;
+    opacity: 0.6;
+}
+
+.footer-small {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-small p {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.login-dialog-container {
+    display: block;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(10px) brightness(80%);
+    z-index: 100;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+}
+
+.login-dialog-container .login-dialog {
+    width: 520px;
+    height: calc(100% - 160px);
+    margin: 80px auto;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.login-dialog-container .login-dialog .login_close {
+    cursor: pointer;
+    float: right;
+}
+
+.login-dialog-container .login-dialog .title {
+    color: #BE2623;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.login-form {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-form .login-title {
+    color: #404651;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
+
+.login-form .alert-title {
+    color: #BE2623;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.login-form .login-input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    margin: 0;
+    margin-top: 12px;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+.login-form .login-submit {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-image: linear-gradient(to top, #5f1312, #be2623);
+    border-radius: 50px;
+    box-shadow: 0px 4px 24px rgba(190, 38, 35, 0.16);
+}
+
+.login-info {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.login-info a {
+    color: #404651;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 940px) {
+    .main-content .left-content {
+        width: 55%;
+    }
+
+    .main-content .right-content {
+        width: 45%;
+    }
+
+    .main-content .right-content .main-image-overlay .main-overlay-image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content .left-content {
+        width: 80%;
+        margin: 40px auto;
+        z-index: 1;
+    }
+
+    .main-content .left-content h1, .main-content .left-content h2 {
+        text-align: center;
+    }
+
+    .main-content .left-content p {
+        text-align: center;
+    }
+
+    .main-content .left-content .btn-masuk, .main-content .left-content .btn-daftar {
+        width: 100%;
+        background-color: white;
+    }
+
+    .main-content .right-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .main-content .right-content .main-image-overlay {
+        backdrop-filter: blur(10px) brightness(80%) contrast(1);
+        background-color: rgba(255, 255, 255, .7);
+    }
+
+    .main-content .right-content .main-image-overlay .main-overlay-image {
+        display: none;
+    }
+
+    .tatacara-content .tatacara-container {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    
+    .tatacara-content .tatacara-container .title {
+        padding-bottom: 12px;
+    }
+
+    .footer .footer-content-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main-content .left-content {
+        width: 100%;
+        margin: 40px auto;
+        z-index: 1;
+    }
+
+    .wrapper {
+        padding: 0px 40px;
+    }
+
+    .login-dialog-container .login-dialog {
+        width: calc(100% - 80px);
+        margin: 40px;
+        height: calc(100% - 80px);
+    }
+
+    .login-dialog-container .login-dialog .title {
+        margin-top: 0px;
+    }
+
+    .footer .footer-content-container .footer-content .footer-content-value {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 0px 20px;
+    }
+
+    .tatacara-content .tatacara-container .title {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    ol {
+        padding-left: 20px;
+    }
+
+    .main-content .left-content {
+        padding: 80px 20px;
+    }
+
+    .login-dialog-container .login-dialog {
+        width: calc(100% - 40px);
+        margin: 40px 20px;
+        height: calc(100% - 80px);
+    }
+
+    .login-dialog-container .login-dialog .title {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .login-form {
+        padding: 24px 0px;
+    }
+
+    .footer .footer-content-container {
+        grid-template-columns: 1fr;
+    }
+}
